@@ -205,7 +205,7 @@ public class BufferedIOBenchmark {
         try {
             
             CSVFileRecorder csvFileRec = new CSVFileRecorder("output.csv");
-            csvFileRec.recordHeaders("Operation,Strategy,FileSizeInBytes,BlockSize,DurationInMs");
+            csvFileRec.recordHeaders("Operation,Strategy,BlockSize,FileSizeInBytes,DurationInMs");
             
             LOG.log(Level.INFO, "");
             LOG.log(Level.INFO, "*** BENCHMARKING WRITE OPERATIONS (with BufferedStream)", Timer.takeTime());
