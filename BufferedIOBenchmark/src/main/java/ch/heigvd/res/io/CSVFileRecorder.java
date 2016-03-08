@@ -21,6 +21,7 @@ public class CSVFileRecorder {
         
     }
 
+    // Allows to write BenchMarkData object in CSV format into file
     public void record(BenchMarkData data) {
         
         String line = "";
@@ -33,6 +34,8 @@ public class CSVFileRecorder {
         ps.println(line);
     }
     
+    // Allows to record any line, but in this cas is just useful to enter a line
+    // with headers of each column in the CSV file
     public void recordHeaders(String headers){
         ps.println(headers);
     }
